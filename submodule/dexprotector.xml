@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<dexprotector>
+    <verbose>true</verbose>
+    <optimize>false</optimize>
+    <trialDeviceID>nexus_6</trialDeviceID>
+    <aar>
+        <initMethod>ru.busylee.submodule.Init.init</initMethod>
+    </aar>
+    <classEncryption mode="all">
+        <filters>
+            <filter>glob:!**/**</filter>
+            <filter>glob:ru/busylee/submodule/ClassIWantHide.class</filter>
+        </filters>
+    </classEncryption>
+</dexprotector>
