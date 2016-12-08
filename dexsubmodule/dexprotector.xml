@@ -9,6 +9,7 @@
     <classEncryption mode="all">
         <filters>
             <filter>glob:!**/**</filter>
+            <filter>glob:ru/busylee/dexsubmodule/ClassIWantToHide.class</filter>
         </filters>
     </classEncryption>
 </dexprotector>

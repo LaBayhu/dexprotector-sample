@@ -35,6 +35,7 @@ android {
 }
 
 dependencies {
-    compile fileTree(dir: 'libs', include: ['*.jar'])
-    compile project(':submodule')
+//    compile fileTree(dir: 'libs', include: ['*.jar'])
+//    runtime(name:'submodule-release', ext:'aar')
+    compile(project(':submodule'))
 }

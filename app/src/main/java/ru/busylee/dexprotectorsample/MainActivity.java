@@ -3,7 +3,8 @@ package ru.busylee.dexprotectorsample;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 
-import ru.busylee.submodule.ClassIWantHide;
+import ru.busylee.dexsubmodule.ClassVisibleToClient;
+import ru.busylee.dexsubmodule.Init;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -11,6 +12,7 @@ public class MainActivity extends AppCompatActivity {
   protected void onCreate(Bundle savedInstanceState) {
     super.onCreate(savedInstanceState);
     setContentView(R.layout.activity_main);
-    new ClassIWantHide().doBlaBla();
+    new Init().init(this);
+    new ClassVisibleToClient().doJob();
   }
 }
